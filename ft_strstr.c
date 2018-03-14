@@ -6,7 +6,7 @@
 /*   By: rkwon <rkwon@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/22 02:48:59 by rkwon             #+#    #+#             */
-/*   Updated: 2018/03/13 22:54:55 by rkwon            ###   ########.fr       */
+/*   Updated: 2018/03/13 22:56:44 by rkwon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 char	*ft_strstr(const char *s1, const char *s2)
 {
-i	return (ft_strnstr(s1, s2, ft_strlen(s1)));	
+	return (ft_strnstr(s1, s2, ft_strlen(s1)));	
 }

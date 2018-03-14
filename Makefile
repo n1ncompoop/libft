@@ -6,7 +6,7 @@
 #    By: rkwon <rkwon@student.42.us.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/20 03:00:04 by rkwon             #+#    #+#              #
-#    Updated: 2018/03/13 22:56:30 by rkwon            ###   ########.fr        #
+#    Updated: 2018/03/13 23:45:49 by rkwon            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,11 @@ HEADER = ./libft.h
 FLAGS = -Wall -Wextra -Werror -c -I ./libft.h
 GCC = gcc
 
-SRCS =			ft_whitespace.c \
+SRCS =			ft_replace.c \
+				ft_countletters.c \
+				ft_isprime.c \
+				ft_intlen.c \
+				ft_whitespace.c \
 				ft_memset.c \
 				ft_bzero.c \
 				ft_memcpy.c \

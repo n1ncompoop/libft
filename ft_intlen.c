@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkwon <rkwon@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/22 02:48:59 by rkwon             #+#    #+#             */
-/*   Updated: 2018/03/13 23:02:21 by rkwon            ###   ########.fr       */
+/*   Created: 2018/03/13 23:07:16 by rkwon             #+#    #+#             */
+/*   Updated: 2018/03/13 23:23:17 by rkwon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *s1, const char *s2)
+int		ft_intlen(int nbr)
 {
-	return (ft_strnstr(s1, s2, ft_strlen(s1)));
+	int	i;
+
+	i = 0;
+	if (nbr < 0)
+	{
+		nbr = nbr * (-1);
+		i++;
+	}
+	while (nbr >= 10)
+	{
+		i++;
+		nbr /= 10;
+	}
+	if ((nbr <= 9) && (nbr >= 0))
+		i++;
+	return (i);
 }

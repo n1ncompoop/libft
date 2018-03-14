@@ -6,7 +6,7 @@
 /*   By: rkwon <rkwon@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 22:57:53 by rkwon             #+#    #+#             */
-/*   Updated: 2018/03/11 23:35:12 by rkwon            ###   ########.fr       */
+/*   Updated: 2018/03/13 23:33:31 by rkwon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+char				*ft_replace(char *str, char a, char b);
+int					ft_countletters(char *str);
+int					ft_isprime(int nbr);
+int					ft_intlen(int nbr);
 int					ft_whitespace(int c);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);

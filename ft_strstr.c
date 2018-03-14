@@ -6,7 +6,7 @@
 /*   By: rkwon <rkwon@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/22 02:48:59 by rkwon             #+#    #+#             */
-/*   Updated: 2018/03/08 19:26:36 by rkwon            ###   ########.fr       */
+/*   Updated: 2018/03/13 22:24:38 by rkwon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strstr(const char *s1, const char *s2)
 	int			j;
 
 	i = 0;
+	if (!s1)
+		return (NULL);
 	if (!(s2[i]))
 		return ((char *)s1);
 	while (s1[i])

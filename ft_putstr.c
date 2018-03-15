@@ -14,5 +14,8 @@
 
 void	ft_putstr(char const *s)
 {
-	ft_putstr_fd(s, 1);
+	if (s)
+	{
+		ft_putstr_fd(s, 1);
+	}
 }
